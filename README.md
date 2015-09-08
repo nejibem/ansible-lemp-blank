@@ -1,5 +1,5 @@
 # ansible-lemp-blank
-Ansible repo to create a blank Lemp VM with Vagrant
+Ansible repo to create a blank Lemp VM (Vmware) with Vagrant
 
 ## Setup
 
