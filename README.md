@@ -7,8 +7,9 @@ Ansible repo to create a blank Lemp VM with Vagrant
 ```vim _ansible/vars/dev.yml```
 
 ### 2. Edit /etc/hosts file on host system
-Setup host for default ip address
-```192.168.56.140 test.local```
+Setup host for default ip address. EG
+```vim /etc/hosts```
+Add ```192.168.56.140 test.local```
 
 ### 3. Start VM
 ```vagrant up```
