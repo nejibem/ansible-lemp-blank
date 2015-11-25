@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             :group => "www-data",
             mount_options: ["dmode=775","fmode=664"]
         #dev_config.vm.network "forwarded_port", guest: 80, host: 8080
-        dev_config.vm.network :private_network, ip: "192.168.56.140"
+        dev_config.vm.network :private_network, ip: "192.168.56.180"
 
         dev_config.vm.provision :ansible do |ansible|
             ansible.playbook = "_ansible/dev_all.yml"
