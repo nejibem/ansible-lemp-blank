@@ -25,16 +25,16 @@ database_host: localhost
 # Mail
 mailer_transport:  smtp
 mailer_host:       smtp.gmail.com
-mailer_user:       kanskje.denne.gang@gmail.com
-mailer_password:   validat3
+mailer_user:       someuser@gmail.com
+mailer_password:   pass
 mailer_encryption: ssl
 mailer_port:       465
 
 # Repository
-#repo_url: git@github.com:nejibem/neste-gang.com.git
-#repo_remote: origin
-#repo_version: master
+repo_url: git@github.com:user/some-repo.com.git
+repo_remote: origin
+repo_version: master
 
 # Ansible
-#ansible_ssh_user: vagrant
-# ansible_ssh_private_key_file: ''
+ansible_ssh_user: vagrant
+ansible_ssh_private_key_file: ''
