@@ -25,24 +25,3 @@
 - name: setup fpm pool config
   template: src=www.conf dest=/etc/php5/fpm/pool.d/www.conf
   notify: restart php-fpm
-
-
-#- name: setup php apache config
-#  template: src=php.ini dest=/etc/php5/apache2/php.ini
-#  notify: restart apache2
-
-
-#- name: xdebug ensure log directory
-#  action: file dest=/var/log/xdebug state=directory owner=www-data group=www-data
-#  when: env != 'dev'
-#
-#- name: setup xdebug config
-#  template: src=20-xdebug.ini dest=/etc/php5/fpm/conf.d/20-xdebug.ini
-#  notify: restart php-fpm
-#  when: env == 'dev'
-#
-#- name: install php dev packages
-#  apt: pkg={{ item }} state=latest
-#  with_items:
-#    - php5-xdebug
-#  when: env == 'dev'
