@@ -15,6 +15,8 @@ nginx_upload_max_filesize: 10M
 # Symfony
 site_domain: test.local
 site_url: test.local
+site_parent_dir: /var/www/
+site_root_dir: /var/www/{{ site_url }}
 
 # Database
 database_name: test
